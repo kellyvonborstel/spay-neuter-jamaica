@@ -90,16 +90,68 @@ header {
   height: 100%;
 }
 
+/*-------------------------------------*/
+/* FOOTER */
+
 footer {
-  margin: 0 auto;
-  max-width: 920px;
+  margin: 0;
+  clear: both;
+  border-top: 15px solid #f3b444;
+}
+
+/*-------------------------------------*/
+/* FOOTER - ADDRESS */
+
+address {
+  position: relative;
+  padding: 20px;
+  background-color: #231f20;
+}
+
+.address {
+  display: block;
+  padding-top: .3em;
+  padding-bottom: .2em;
+  font-size: .85em;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 870px) {
+  footer {
+    text-align: center;
+  }
+
+  address {
+    padding: 0;
+    text-align: center;
+  }
+
+  .address {
+    position: relative;
+    display: inline;
+    padding-right: .6em;
+    padding-left: .6em;
+    line-height: 3.9em;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  .address {
+    padding: .6em 2em .7em;
+    font-size: .9em;
+  }
+
+  .address:hover {
+    color: #ccc;
+  }
 }
 
 /*-------------------------------------*/
 /* FOOTER - COPYRIGHT */
 
 .copy-credit {
-  padding: 1.2em;
+  padding: 20px;
   margin: 0 auto;
   font-size: .85em;
 }
@@ -129,7 +181,7 @@ footer {
   margin-left: .7em;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   .copy-credit {
     text-align: center;
   }

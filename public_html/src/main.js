@@ -2,6 +2,15 @@ $(function() {
 
   addImageHandlers();
 
+  $('#slider').responsiveSlides({
+    auto: true,
+    pager: false,
+    nav: true,
+    speed: 10,
+    maxwidth: 800,
+    namespace: 'large-btns'
+  });
+
   // added the click handler to prevent images from disappearing on ios
   function imageHandler(className, enterImgPath, leaveImgPath) {
     $(className).on({
