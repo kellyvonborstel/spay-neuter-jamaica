@@ -90,8 +90,24 @@ header {
   height: 100%;
 }
 
+footer {
+  margin: 0 auto;
+  max-width: 920px;
+}
 
-/*! http://responsiveslides.com v1.55 by @viljamis */
+.divider {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .divider {
+    display: initial;
+    padding: 0 30px;
+  }
+}
+
+/*-------------------------------------*/
+/* SLIDESHOW http://responsiveslides.com v1.55 by @viljamis */
 
 .rslides {
   position: relative;
