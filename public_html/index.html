@@ -3,32 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>International Spay/Neuter Network</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="International Spay/Neuter Network is a nonprofit organization working to reduce dog and cat overpopulation using cost-effective sterilization, and to improve the welfare of animals through humane education.">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <header>
-    
+  <header>  
   </header>
   <nav class="main-nav">
     <ul class="nav-items">
       <li><a class="current-page" href="index.html">Home</a></li>
-      <li><a href="isnn/about-us.html">About Us</a></li>
-      <li><a href="isnn/how-to-help.html">How to Help</a></li>
-      <li><a href="isnn/programs-services.html">Programs &amp; Services</a></li>
-      <li><a href="isnn/resources.html">Resources</a></li>
-      <li><a href="isnn/contact.html">Contact Us</a></li>
+      <li><a href="html/about-us.html">About Us</a></li>
+      <li><a href="html/how-to-help.html">How to Help</a></li>
+      <li><a href="html/programs-services.html">Programs &amp; Services</a></li>
+      <li><a href="html/resources.html">Resources</a></li>
+      <li><a href="html/contact.html">Contact Us</a></li>
     </ul>
   </nav>
   <div class="page-content">
     <div class="sidebar-content">
       <aside class="donate">
-        <a href="isnn/donate.htm"><p>Click here to <span>Donate</span>  
+        <a href="html/donate.htm"><p>Click here to <span>Donate</span>  
         </p></a>
       </aside>
       <aside class="call-to-action">
         <h4>Help us raise money without spending a penny!</h4>
-        <a class="action-link" href="isnn/other-ways-to-give.htm#goodsearch">find out how</a>
+        <a class="action-link" href="html/other-ways-to-give.htm#goodsearch">find out how</a>
       </aside>
       <aside class="email-signup">
         <form method="post" action="http://oi.vresp.com?fid=18e2de2d3d">
@@ -44,13 +44,47 @@
       <div class="video-container">
         <iframe src="https://www.youtube.com/embed/DJ8U4y0OOVk" frameborder="0" allowfullscreen></iframe>
       </div>
-      <p class="intro"><span class="org-name">International Spay/Neuter Network</span> (ISNN) is an all-volunteer, nonprofit organization working to improve the lives of Jamaica’s animals and people. Our goal is to reduce dog and cat overpopulation using cost-effective sterilization, and to improve the welfare of animals through humane education.</p>
+      <p class="intro"><span class="org-name">International Spay/Neuter Network</span> (ISNN) is an all-volunteer, nonprofit organization working to improve the lives of Jamaica&rsquo;s animals and people. Our goal is to reduce dog and cat overpopulation using cost-effective sterilization, and to improve the welfare of animals through humane education.</p>
+    </div>
+    <div class="slides-container">
+      <ul class="rslides" id="slider">
+        <li><img src="images/slideshow/44.jpg"></li>
+        <li><img src="images/slideshow/13.jpg"></li>
+        <li><img src="images/slideshow/42.jpg"></li>
+        <li><img src="images/slideshow/24.jpg"></li>
+        <li><img src="images/slideshow/40.jpg"></li>
+        <li><img src="images/slideshow/14.jpg"></li>
+        <li><img src="images/slideshow/43.jpg"></li>
+        <li><img src="images/slideshow/2.jpg"></li>
+        <li><img src="images/slideshow/45.jpg"></li>
+        <li><img src="images/slideshow/5.jpg"></li>
+        <li><img src="images/slideshow/41.jpg"></li>
+        <li><img src="images/slideshow/10.jpg"></li>
+        <li><img src="images/slideshow/4.jpg"></li>
+        <li><img src="images/slideshow/33.jpg"></li>
+        <li><img src="images/slideshow/46.jpg"></li>
+        <li><img src="images/slideshow/30.jpg"></li>
+        <li><img src="images/slideshow/17.jpg"></li>
+        <li><img src="images/slideshow/1.jpg"></li>
+        <li><img src="images/slideshow/28.jpg"></li>
+        <li><img src="images/slideshow/29.jpg"></li>
+      </ul>
     </div>
   </div>
 
-
-
-
-  
+  <script src="lib/jquery-3.1.0.min.js"></script>
+  <script src="src/responsiveslides.min.js"></script>
+  <script>
+    $(function () {
+      $('#slider').responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: true,
+        speed: 10,
+        maxwidth: 800,
+        namespace: 'large-btns'
+      });
+    });
+  </script>
 </body>
 </html>
