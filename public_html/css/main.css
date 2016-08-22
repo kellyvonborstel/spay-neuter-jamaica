@@ -44,7 +44,8 @@ html, body {
 }
 
 body {
-  font: 16px/1.5 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', sans-serif;
+  font: 300 16px/1.6 'Merriweather', serif;
+  letter-spacing: 0.01em;
   color: #777;
   /* momentum scrolling ios */
   overflow-y: scroll;
@@ -68,6 +69,17 @@ a:hover {
 header {
   margin: 0 auto;
   max-width: 920px;
+  height: 140px;
+}
+
+.logo-container {
+  width: 100%;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+.logo {
+  width: 280px;
 }
 
 /*-------------------------------------*/
@@ -77,22 +89,28 @@ header {
   position: relative;
   background-color: #231f20;
   border-bottom: 15px solid #f3b444;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding: 20px 0;
 }
 
 .main-nav a {
+  font-weight: 300;
+  letter-spacing: .04em;
   color: #fff;
   text-decoration: none;
+  font-size: .85em;
 }
 
 .main-nav-items li {
   padding: 12px 20px;
 }
 
-.main-nav-items .current-page,
-.main-nav-items li:hover {
+.main-nav-items .current-page {
   background-color: #577442;
+}
+
+.main-nav-items li:hover {
+  background-color: #769a5c;
 }
 
 @media screen and (min-width: 768px) {
@@ -107,8 +125,13 @@ header {
   }
 
   .main-nav-items li {
-    padding: 15px;
+    margin-right: -5px;
+    padding: 13px;
     display: inline-block;
+  }
+
+  .main-nav-items li:last-child {
+    margin-right: 0;
   }
 }
 
@@ -127,7 +150,7 @@ header {
 /*-------------------------------------*/
 /* SECONDARY NAVIGATION */
 
-.secondary-nav {
+/*.secondary-nav {
   width: 100%;
   padding: 20px 0;
   margin-bottom: 10px;
@@ -156,14 +179,14 @@ header {
   .secondary-nav {
     margin-bottom: 15px;
   }
-}
+}*/
 
 /*-------------------------------------*/
 /* MAIN CONTENT */
 
 .page-content {
+  max-width: 920px;
   margin: 0 auto;
-  max-width: 924px;
 }
 
 /*-------------------------------------*/
@@ -193,68 +216,25 @@ header {
 }
 
 /*-------------------------------------*/
-/* SIDEBAR - DONATE */
-
-.donate {
-  text-transform: uppercase;
-  background: url(../images/background-yellow.jpg) repeat #fbcc74;
-  width: 100%;
-  padding: 20px;
-  margin-bottom: 10px;
-  border-top: 6px solid #fde0ac;
-  border-bottom: 6px solid #fde0ac;
-  text-align: center;
-}
-
-.donate p {
-  font-size: 1.1em;
-  color: #231f20;
-}
-
-.donate span {
-  font-family: Verdana, sans-serif;
-  font-weight: bold;
-  font-size: 2.1em;
-  line-height: 1;
-  color: #231f20;
-}
-
-.donate:hover {
-  background: url(../images/background-light-yellow.jpg);
-}
-
-@media screen and (min-width: 768px) {
-  .donate {
-    text-align: left;
-  }
-}
-
-@media screen and (min-width: 1150px) {
-  .donate {
-    margin-bottom: 15px;
-    padding: 20px 25px;
-  }
-}
-
-/*-------------------------------------*/
 /* SIDEBAR - CALL TO ACTION */
 
 .call-to-action {
   background: url(../images/background-green.jpg) repeat #90b361;
   width: 100%;
   padding: 25px 20px 45px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   position: relative;
   border-top: 6px solid #bad0a0;
   border-bottom: 6px solid #bad0a0;
 }
 
 .call-to-action h2 {
-  font-size: 1.3em;
-  font-weight: bold;
-  line-height: 1.3;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.2;
   margin-bottom: .2em;
-  font-family: Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0;
 }
 
 .call-to-action p {
@@ -262,6 +242,9 @@ header {
 }
 
 .action-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: .02em;
   color: #fff;
   background-color: #231f20;
   padding: 7px 17px;
@@ -275,9 +258,8 @@ header {
   color: #fff;
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 768px) {
   .call-to-action {
-    margin-bottom: 15px;
     padding: 25px;
     padding-bottom: 45px;
   }
@@ -289,24 +271,28 @@ header {
 .email-signup {
   width: 100%;
   padding: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   background-color: #668a4d;
-  color: #fff;
+  color: #e3eddd;
 }
 
 .email-signup h2 {
-  font-size: 1.3em;
-  font-weight: bold;
-  line-height: 1.3;
+  font-size: 1.45em;
+  font-weight: 400;
+  line-height: 1.2;
+  font-family: 'Montserrat', sans-serif;
   margin-bottom: .2em;
+  color: #fff;
 }
 
 .email-signup p {
+  margin-bottom: .3em;
   font-size: .9em;
+  font-weight: 300;
 }
 
 .inputMailing {
-  width: 200px;
+  width: 190px;
   margin-right: 10px;
   margin-top: 10px;
   height: 25px;
@@ -322,9 +308,8 @@ header {
   border: 1px solid #999;
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 768px) {
   .email-signup {
-    margin-bottom: 15px;
     padding: 25px;
   }
 }
@@ -336,11 +321,10 @@ header {
   background: url(../images/background-green.jpg) repeat #90b361;
   width: 100%;
   padding: 23px 20px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   position: relative;
   border-top: 6px solid #bad0a0;
   border-bottom: 6px solid #bad0a0;
-  font-family: Verdana, sans-serif;
 }
 
 .facebook img {
@@ -354,11 +338,14 @@ header {
   font-size: 1.4em;
   font-weight: bold;
   color: #231720;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0;
 }
 
 .facebook p {
-  font-size: 1.2em;
-  line-height: 1.1;
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 1.2;
   color: #333;
 }
 
@@ -366,7 +353,7 @@ header {
   background-image: url(../images/background-light-green.jpg);
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 768px) {
   .facebook {
     padding: 25px;
   }
@@ -377,7 +364,7 @@ header {
 
 .intro {
   font-size: .9em;
-  padding: 20px;
+  padding: 19px;
   color: #231f20;
 }
 
@@ -402,6 +389,10 @@ header {
   height: 100%;
 }
 
+.slideshow-container {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .main-content {
     width: 63%;
@@ -412,16 +403,20 @@ header {
   .video-container {
     margin-top: 30px;
   }
+
+  .intro {
+    padding: 30px 20px;
+  }
+
+  .slideshow-container {
+    display: initial;
+  }
 }
 
 @media screen and (min-width: 1150px) {
   .main-content {
     width: 65%;
     margin-bottom: 40px;
-  }
-
-  .intro {
-    padding: 35px 20px;
   }
 }
 
@@ -445,11 +440,12 @@ address {
 
 .address {
   display: block;
-  padding-top: .3em;
-  padding-bottom: .2em;
+/*  padding-top: .3em;
+  padding-bottom: .2em;*/
   font-size: .85em;
   color: #fff;
   text-decoration: none;
+  padding: 5px 0;
 }
 
 .address:hover {
@@ -468,10 +464,11 @@ address {
 
   .address {
     position: relative;
-    display: inline;
-    padding-right: 1em;
-    padding-left: 1em;
-    line-height: 3.9em;
+    display: inline-block;
+    /*padding-right: 1em;
+    padding-left: 1em;*/
+    /*line-height: 3.9em;*/
+    padding: 18px 10px;
   }
 }
 
@@ -488,7 +485,7 @@ address {
 .copy-credit {
   padding: 20px;
   margin: 0 auto;
-  font-size: .75em;
+  font-size: .7em;
 }
 
 .copyright {
