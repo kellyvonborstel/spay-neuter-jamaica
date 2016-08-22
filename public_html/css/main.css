@@ -71,7 +71,7 @@ header {
 }
 
 /*-------------------------------------*/
-/* NAVIGATION */
+/* MAIN NAVIGATION */
 
 .main-nav {
   position: relative;
@@ -85,21 +85,50 @@ header {
   text-decoration: none;
 }
 
-.nav-items li {
+.main-nav-items li {
   padding: 15px 20px;
   border-bottom: 2px solid #231f20;
 }
 
-.current-page,
-.nav-items li:hover {
+.main-nav-items .current-page,
+.main-nav-items li:hover {
   background-color: #577442;
 }
 
 @media screen and (min-width: 1030px) {
-  .nav-items li:hover {
+  .main-nav-items li:hover {
     background-color: #577442;
   }
 }
+
+/*-------------------------------------*/
+/* SECONDARY NAVIGATION */
+
+.secondary-nav {
+  width: 100%;
+  padding: 15px 0;
+  margin-bottom: 15px;
+  background-color: #668a4d;
+}
+
+.secondary-nav a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.secondary-nav-items li {
+  padding: 8px 20px;
+}
+
+.secondary-nav-items li:hover {
+  background-color: #577442;
+}
+
+/*@media screen and (min-width: 1030px) {
+  .secondary-nav-items li:hover {
+    background-color: #577442;
+  }
+}*/
 
 /*-------------------------------------*/
 /* MAIN CONTENT */
@@ -119,10 +148,6 @@ header {
 .sidebar-content a {
   text-decoration: none;
 }
-
-/*.sidebar-content section:last-child {
-  margin-bottom: 30px;
-}*/
 
 /*-------------------------------------*/
 /* SIDEBAR - DONATE */
