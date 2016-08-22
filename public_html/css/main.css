@@ -90,18 +90,16 @@ header {
   padding: 12px 20px;
 }
 
-.main-nav-items .current-page {
-  background-color: #577442;
-}
-
+.main-nav-items .current-page,
 .main-nav-items li:hover {
-  background-color: #6d8958;
+  background-color: #577442;
 }
 
 @media screen and (min-width: 768px) {
   .main-nav {
     text-align: center;
     padding: 0;
+    margin-bottom: 30px;
   }
 
   .main-nav a {
@@ -117,6 +115,12 @@ header {
 @media screen and (min-width: 950px) {
   .main-nav-items li {
     padding: 15px 30px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .main-nav {
+    margin-bottom: 40px;
   }
 }
 
@@ -148,12 +152,18 @@ header {
   background-color: #333;;
 }
 
+@media screen and (min-width: 1150px) {
+  .secondary-nav {
+    margin-bottom: 15px;
+  }
+}
+
 /*-------------------------------------*/
 /* MAIN CONTENT */
 
 .page-content {
   margin: 0 auto;
-  max-width: 920px;
+  max-width: 924px;
 }
 
 /*-------------------------------------*/
@@ -165,6 +175,21 @@ header {
 
 .sidebar-content a {
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar-content {
+    width: 32%;
+    float: left;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .sidebar-content {
+    width: 28%;
+    margin-bottom: 30px;
+  }
 }
 
 /*-------------------------------------*/
@@ -198,6 +223,18 @@ header {
   background: url(../images/background-light-yellow.jpg);
 }
 
+@media screen and (min-width: 768px) {
+  .donate {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .donate {
+    margin-bottom: 15px;
+    padding: 20px 25px;
+  }
+}
 
 /*-------------------------------------*/
 /* SIDEBAR - CALL TO ACTION */
@@ -238,6 +275,14 @@ header {
   color: #fff;
 }
 
+@media screen and (min-width: 1150px) {
+  .call-to-action {
+    margin-bottom: 15px;
+    padding: 25px;
+    padding-bottom: 45px;
+  }
+}
+
 /*-------------------------------------*/
 /* SIDEBAR - EMAIL SIGNUP */
 
@@ -261,7 +306,7 @@ header {
 }
 
 .inputMailing {
-  width: 230px;
+  width: 200px;
   margin-right: 10px;
   margin-top: 10px;
   height: 25px;
@@ -275,6 +320,13 @@ header {
   padding: 4px 10px 3px;
   background-color: #fff;
   border: 1px solid #999;
+}
+
+@media screen and (min-width: 1150px) {
+  .email-signup {
+    margin-bottom: 15px;
+    padding: 25px;
+  }
 }
 
 /*-------------------------------------*/
@@ -314,6 +366,11 @@ header {
   background-image: url(../images/background-light-green.jpg);
 }
 
+@media screen and (min-width: 1150px) {
+  .facebook {
+    padding: 25px;
+  }
+}
 
 /*-------------------------------------*/
 /* MAIN CONTENT */
@@ -343,6 +400,29 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .main-content {
+    width: 63%;
+    float: right;
+    margin-bottom: 30px;
+  }
+
+  .video-container {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .main-content {
+    width: 65%;
+    margin-bottom: 40px;
+  }
+
+  .intro {
+    padding: 35px 20px;
+  }
 }
 
 /*-------------------------------------*/
