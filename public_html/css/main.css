@@ -58,6 +58,10 @@ a {
   text-decoration: underline;
 }
 
+a:hover {
+  color: #577442;
+}
+
 /*-------------------------------------*/
 /* HEADER */
 
@@ -85,11 +89,6 @@ header {
   padding: 15px 20px;
   border-bottom: 2px solid #231f20;
 }
-
-/*.nav-items li:last-child {
-  border-bottom: 0;
-  padding-bottom: 22px;
-}*/
 
 .current-page,
 .nav-items li:hover {
@@ -133,13 +132,10 @@ header {
   background: url(../images/background-yellow.jpg) repeat #fbcc74;
   width: 100%;
   padding: 20px;
-  color: #231f20;
   margin-bottom: 15px;
   border-top: 6px solid #fde0ac;
   border-bottom: 6px solid #fde0ac;
-  text-decoration: none;
   text-align: center;
-  font-weight: bold;
 }
 
 .donate p {
@@ -148,7 +144,9 @@ header {
 }
 
 .donate span {
-  font-size: 2.4em;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 2.3em;
   line-height: 1;
   color: #231f20;
 }
