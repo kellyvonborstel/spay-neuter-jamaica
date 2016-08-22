@@ -66,10 +66,52 @@ header {
   max-width: 920px;
 }
 
+/*-------------------------------------*/
+/* NAVIGATION */
+
+.main-nav {
+  position: relative;
+  background-color: #231f20;
+  border-bottom: 15px solid #f3b444;
+  margin-bottom: 15px;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-items li {
+  padding: 15px 20px;
+  border-bottom: 2px solid #231f20;
+}
+
+/*.nav-items li:last-child {
+  border-bottom: 0;
+  padding-bottom: 22px;
+}*/
+
+.current-page,
+.nav-items li:hover {
+  background-color: #577442;
+}
+
+@media screen and (min-width: 1030px) {
+  .nav-items li:hover {
+    background-color: #577442;
+  }
+}
+
+/*-------------------------------------*/
+/* MAIN CONTENT */
+
 .page-content {
   margin: 0 auto;
   max-width: 920px;
 }
+
+/*-------------------------------------*/
+/* SIDEBAR */
 
 .sidebar-content {
   color: #231720;
@@ -79,12 +121,12 @@ header {
   text-decoration: none;
 }
 
-.sidebar-content section:last-child {
+/*.sidebar-content section:last-child {
   margin-bottom: 30px;
-}
+}*/
 
 /*-------------------------------------*/
-/* DONATE */
+/* SIDEBAR - DONATE */
 
 .donate {
   text-transform: uppercase;
@@ -92,7 +134,7 @@ header {
   width: 100%;
   padding: 20px;
   color: #231f20;
-  /*margin-bottom: 15px;*/
+  margin-bottom: 15px;
   border-top: 6px solid #fde0ac;
   border-bottom: 6px solid #fde0ac;
   text-decoration: none;
@@ -113,18 +155,18 @@ header {
 
 @media screen and (min-width: 1030px) {
   .donate:hover {
-    background: url(../images/background-light-yellow.jpg) repeat #fbcc74;
+    background: url(../images/background-light-yellow.jpg);
   }
 }
 
 /*-------------------------------------*/
-/* CALL TO ACTION */
+/* SIDEBAR - CALL TO ACTION */
 
 .call-to-action {
   background-color: #668a4d;
   width: 100%;
   padding: 25px 20px 40px;
-  /*margin-bottom: 15px;*/
+  margin-bottom: 15px;
   position: relative;
   color: #d5e1cd;
 }
@@ -153,13 +195,13 @@ header {
 }
 
 /*-------------------------------------*/
-/* EMAIL SIGNUP */
+/* SIDEBAR - EMAIL SIGNUP */
 
 .email-signup {
   background: url(../images/background-green.jpg) repeat #90b361;
   width: 100%;
   padding: 20px;
-  /*margin-bottom: 15px;*/
+  margin-bottom: 15px;
   border-top: 6px solid #bad0a0;
   border-bottom: 6px solid #bad0a0;
 }
@@ -190,13 +232,13 @@ header {
 }
 
 /*-------------------------------------*/
-/* FACEBOOK */
+/* SIDEBAR - FACEBOOK */
 
 .facebook {
   background-color: #668a4d;
   width: 100%;
   padding: 30px 20px 30px;
-  /*margin-bottom: 15px;*/
+  margin-bottom: 15px;
   position: relative;
   color: #d5e1cd;
   position: relative;
