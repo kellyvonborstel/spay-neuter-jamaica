@@ -69,6 +69,7 @@ a:hover {
 header {
   margin: 0 auto;
   max-width: 920px;
+  height: 150px;
 }
 
 .logo-container {
@@ -79,13 +80,6 @@ header {
 .logo {
   width: 280px;
 }
-
-@media screen and (min-width: 768px) {
-  .logo {
-    width: 230px;
-  }
-}
-
 
 /*-------------------------------------*/
 /* MAIN NAVIGATION */
