@@ -65,13 +65,14 @@ a:hover {
 .main-content h1, h2, h3, h4 {
   margin-right: 20px;
   margin-left: 20px;
-  margin-bottom: .5em;
+  margin-bottom: .2em;
   font-family: 'Source Sans Pro', serif;
   font-weight: 700;
   line-height: 1.2;
 }
 
 .main-content p {
+  font-size: .95em;
   margin-right: 20px;
   margin-left: 20px;
   margin-bottom: 1.2em;
@@ -79,7 +80,8 @@ a:hover {
 
 .main-content h1 {
   margin-top: 1em;
-  font-size: 1.8em;
+  margin-bottom: .5em;
+  font-size: 1.9em;
   color: #f3b444;
 }
 
@@ -91,13 +93,15 @@ a:hover {
 }
 
 .main-content h3 {
-  font-size: 1.2em;
-  color: #858585;
+  font-size: 1.3em;
+  color: #666;
+  font-weight: 600;
 }
 
 .main-content h4 {
+  font-size: 1.15em;
   font-weight: 600;
-  font-size: 1.2em;
+  color: #777;
 }
 
 .page-content {
@@ -273,10 +277,11 @@ header {
   position: relative;
 }
 
-.intro {
+.main-content .intro {
   padding: 19px;
   font-size: .9em;
   color: #231f20;
+  margin-bottom: 0;
 }
 
 .org-name {
@@ -315,7 +320,7 @@ header {
     margin-top: 30px;
   }
 
-  .intro {
+  .main-content .intro {
     padding: 30px 20px;
   }
 
