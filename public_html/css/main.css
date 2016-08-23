@@ -69,11 +69,9 @@ a:hover {
 header {
   margin: 0 auto;
   max-width: 920px;
-  height: 140px;
 }
 
 .logo-container {
-  width: 100%;
   margin-top: 15px;
   margin-left: 25px;
 }
@@ -82,30 +80,37 @@ header {
   width: 280px;
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 230px;
+  }
+}
+
+
 /*-------------------------------------*/
 /* MAIN NAVIGATION */
 
 .main-nav {
   position: relative;
-  background-color: #231f20;
-  border-bottom: 15px solid #f3b444;
-  margin-bottom: 15px;
   padding: 20px 0;
-}
-
-.main-nav a {
-  font-weight: 300;
-  letter-spacing: .04em;
-  color: #fff;
-  text-decoration: none;
-  font-size: .85em;
+  margin-bottom: 15px;
+  border-bottom: 15px solid #f3b444;
+  background-color: #231f20;
 }
 
 .main-nav-items li {
   padding: 12px 20px;
 }
 
-.main-nav-items .current-page {
+.main-nav-items a {
+  font-size: .85em;
+  font-weight: 300;
+  letter-spacing: .04em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-nav-items li.current-page {
   background-color: #577442;
 }
 
@@ -115,29 +120,64 @@ header {
 
 @media screen and (min-width: 768px) {
   .main-nav {
-    text-align: center;
     padding: 0;
     margin-bottom: 30px;
-  }
-
-  .main-nav a {
-    font-size: .85em;
+    text-align: center;
   }
 
   .main-nav-items li {
-    margin-right: -5px;
-    padding: 13px;
     display: inline-block;
+    padding: 13px 20px;
+    margin-right: -5px;
   }
 
   .main-nav-items li:last-child {
     margin-right: 0;
   }
+
+  .main-nav-items a {
+    font-size: .8em;
+  }
+
+
+
+
+  .how-to-help {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background-color: #fff;
+  }
+
+  .how-to-help li {
+    background-color: #fff;
+    display: inline;
+    padding: 0 15px;
+  }
+
+  .how-to-help li:hover {
+    background-color: #fff;
+  }
+
+  .how-to-help a {
+    font-size: .85em;
+    color: #769a5c;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  .how-to-help a:hover {
+    color: #000;
+  }
 }
 
 @media screen and (min-width: 950px) {
   .main-nav-items li {
-    padding: 15px 30px;
+    padding: 13px 30px;
+  }
+
+  .main-nav-items a {
+    font-size: .85em;
   }
 }
 
@@ -233,7 +273,7 @@ header {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: .2em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 0;
 }
 
@@ -242,7 +282,7 @@ header {
 }
 
 .action-link {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   letter-spacing: .02em;
   color: #fff;
@@ -280,7 +320,7 @@ header {
   font-size: 1.45em;
   font-weight: 400;
   line-height: 1.2;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   margin-bottom: .2em;
   color: #fff;
 }
@@ -338,7 +378,7 @@ header {
   font-size: 1.4em;
   font-weight: bold;
   color: #231720;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 0;
 }
 
