@@ -76,7 +76,7 @@ a:hover {
   margin-bottom: .2em;
   font-family: 'Source Sans Pro', serif;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: 0;
 }
 
@@ -129,6 +129,10 @@ a:hover {
 
 .add-margin {
   margin-bottom: .7em;
+}
+
+.add-margin-30 {
+  margin-bottom: 30px;
 }
 
 strong {
