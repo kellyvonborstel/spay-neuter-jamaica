@@ -65,8 +65,10 @@ a:hover {
 .main-content h1, h2, h3, h4 {
   margin-right: 20px;
   margin-left: 20px;
+  margin-bottom: .5em;
   font-family: 'Source Sans Pro', serif;
   font-weight: 700;
+  line-height: 1.2;
 }
 
 .main-content p {
