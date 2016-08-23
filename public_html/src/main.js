@@ -11,19 +11,6 @@ $(function() {
     namespace: 'large-btns'
   });
 
-  // change order of sidebar items when window is resized
-  $(window).resize(function () {
-    var windowWidth = $(window).width();
-
-    if (windowWidth >= 870) {
-      $(".sidebar-content").remove().insertBefore($(".main-content"));
-      addImageHandlers();
-    }
-    else {
-      $(".main-content").remove().insertBefore($(".sidebar-content"));
-    }
-  }).trigger("resize");
-
   // added the click handler to prevent images from disappearing on ios
   function imageHandler(className, enterImgPath, leaveImgPath) {
     $(className).on({
