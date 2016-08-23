@@ -113,7 +113,6 @@ header {
 
 .main-nav-items a {
   font-size: .85em;
-  font-weight: 300;
   letter-spacing: .04em;
   color: #fff;
   text-decoration: none;
@@ -300,17 +299,16 @@ header {
 .email-signup h2 {
   margin-bottom: .2em;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.4em;
-  font-weight: 700;
+  font-size: 1.45em;
+  font-weight: 600;
   line-height: 1.2;
-  letter-spacing: .02em;
+  letter-spacing: .01em;
   color: #fff;
 }
 
 .email-signup p {
   margin-bottom: .3em;
   font-size: .9em;
-  font-weight: 300;
 }
 
 .inputMailing {
@@ -358,8 +356,8 @@ header {
 
 .facebook span {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.4em;
-  font-weight: bold;
+  font-size: 1.5em;
+  font-weight: 700;
   letter-spacing: 0;
   color: #231720;
 }
@@ -392,7 +390,7 @@ header {
 
 .org-name {
   font-size: 1.1em;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .video-container {
