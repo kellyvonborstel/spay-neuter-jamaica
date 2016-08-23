@@ -76,7 +76,7 @@ a:hover {
   margin-bottom: .2em;
   font-family: 'Source Sans Pro', serif;
   font-weight: 600;
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: 0;
 }
 
@@ -128,11 +128,16 @@ a:hover {
 }
 
 .add-margin {
-  margin-bottom: .7em;
+  margin-bottom: .8em;
 }
 
 .add-margin-30 {
   margin-bottom: 30px;
+}
+
+.main-content h3.testimonial {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 strong {
@@ -277,7 +282,7 @@ header {
 }
 
 .secondary-nav-items li:hover {
-  background-color: #333;;
+  background-color: #444;;
 }
 
 @media screen and (min-width: 768px) {
