@@ -2,7 +2,6 @@ $(function() {
 
   addImageHandlers();
 
-
   $('#slider').responsiveSlides({
     auto: true,
     pager: false,
@@ -11,7 +10,6 @@ $(function() {
     maxwidth: 800,
     namespace: 'large-btns'
   });
-
 
   // change order of sidebar items when window is resized
   $(window).resize(function () {
@@ -25,7 +23,6 @@ $(function() {
       $(".main-content").remove().insertBefore($(".sidebar-content"));
     }
   }).trigger("resize");
-
 
   // added the click handler to prevent images from disappearing on ios
   function imageHandler(className, enterImgPath, leaveImgPath) {
@@ -41,7 +38,6 @@ $(function() {
       }
     });
   }
-
 
   function addImageHandlers() {
     // class names with '-home' included because path is different for images on index.html
