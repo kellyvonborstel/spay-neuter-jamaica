@@ -140,6 +140,10 @@ a:hover {
   margin-bottom: 7px;
 }
 
+.phone {
+  text-decoration: none;
+}
+
 strong {
   font-weight: 400;
   color: #555;
