@@ -172,15 +172,39 @@ strong {
 /* HEADER */
 
 header {
-  height: 155px;
+  position: relative;
+  height: 150px;
   max-width: 990px;
   margin: 0 auto;
 }
 
 .logo {
+  float: left;
   width: 260px;
-  margin-top: 20px;
-  margin-left: 25px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.donate-today {
+  margin-top: 35px;
+  margin-right: 25px;
+  float: right;
+  background-color: #f3b444;
+  padding: 5px 27px 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: .03em;
+  word-spacing: .2em;
+  font-size: 1.3em;
+  border-radius: 10px;
+}
+
+.donate-today:hover {
+  color: white;
+  background-color: #fbc35f;
 }
 
 @media screen and (min-width: 1150px) {
