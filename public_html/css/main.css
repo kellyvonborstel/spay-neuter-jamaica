@@ -44,7 +44,7 @@ html, body {
 
 body {
   font: 300 16px/1.6 'Merriweather', serif;
-  letter-spacing: 0.01em;
+  letter-spacing: .01em;
   color: #777;
   /* momentum scrolling ios */
   overflow-y: scroll;
@@ -222,14 +222,14 @@ header {
   .main-nav-items li {
     display: inline-block;
     padding: 13px 16px;
-    margin-right: -5px;
   }
 
-  .main-nav-items li:last-child {
+  .main-nav-items a:last-child {
     margin-right: 0;
   }
 
   .main-nav-items a {
+    margin-right: -5px;
     font-size: .8em;
   }
 }
@@ -250,7 +250,7 @@ header {
   }
 
   .main-nav {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 }
 
@@ -260,7 +260,7 @@ header {
 .secondary-nav {
   width: 100%;
   padding: 12px 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   background-color: #668a4d;
 }
 
@@ -282,18 +282,12 @@ header {
 }
 
 .secondary-nav-items li:hover {
-  background-color: #444;;
+  background-color: #444;
 }
 
 @media screen and (min-width: 768px) {
   .secondary-nav-items li {
     padding: 7px 25px;
-  }
-}
-
-@media screen and (min-width: 1150px) {
-  .secondary-nav {
-    margin-bottom: 15px;
   }
 }
 
@@ -404,10 +398,9 @@ header {
 
 .call-to-action h2 {
   margin-bottom: .15em;
-  font-family: 'Source Sans Pro', sans-serif;
+  margin-left: 0;
   font-size: 1.5em;
   font-weight: 700;
-  line-height: 1.1;
   color: #231f20;
 }
 
@@ -450,10 +443,9 @@ header {
 }
 
 .email-signup h2 {
+  margin-left: 0;
   margin-bottom: .2em;
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.45em;
-  font-weight: 600;
   line-height: 1.2;
   letter-spacing: .01em;
   color: #fff;
