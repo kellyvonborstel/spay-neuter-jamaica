@@ -173,6 +173,8 @@ strong {
 
 header {
   height: 155px;
+  max-width: 990px;
+  margin: 0 auto;
 }
 
 .logo {
