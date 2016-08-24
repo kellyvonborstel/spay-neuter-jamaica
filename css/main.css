@@ -211,6 +211,10 @@ header {
   .logo {
     margin-left: 40px;
   }
+
+  .donate-today {
+    margin-right: 40px;
+  }
 }
 
 /*-------------------------------------*/
@@ -276,7 +280,7 @@ header {
 
 @media screen and (min-width: 1150px) {
   .main-nav-items li {
-    padding: 13px 31px;
+    padding: 13px 30px;
   }
 
   .main-nav {
