@@ -379,7 +379,7 @@ header {
   }
 
   .slideshow-container {
-    display: initial;
+    display: block;
   }
 }
 
