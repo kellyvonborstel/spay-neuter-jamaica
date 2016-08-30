@@ -268,6 +268,10 @@ header {
 }
 
 @media screen and (min-width: 950px) {
+  .main-nav {
+    margin-bottom: 30px;
+  }
+
   .main-nav-items li {
     padding: 13px 28px;
   }
@@ -280,10 +284,6 @@ header {
 @media screen and (min-width: 1150px) {
   .main-nav-items li {
     padding: 13px 30px;
-  }
-
-  .main-nav {
-    margin-bottom: 25px;
   }
 }
 
@@ -371,7 +371,7 @@ header {
   }
 
   .video-container {
-    margin-top: 30px;
+    margin-top: 35px;
   }
 
   .main-content .intro {
