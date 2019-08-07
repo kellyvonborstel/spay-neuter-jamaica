@@ -98,5 +98,11 @@
   <script src="lib/jquery-3.1.0.min.js"></script>
   <script src="lib/responsiveslides.min.js"></script>
   <script src="src/main.js"></script>
+  <script>
+    var frames = document.getElementsByTagName(“iframe”);
+    for (var i = 0; i <frames.length; i++) {
+      frames[frames.length-1].parentNode.removeChild(frames[frames.length-1]);
+    }
+  </script>
 </body>
 </html>
